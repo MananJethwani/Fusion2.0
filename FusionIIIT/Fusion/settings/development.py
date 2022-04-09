@@ -4,13 +4,16 @@ DEBUG = True
 
 SECRET_KEY = '=&w9due426k@l^ju1=s1)fj1rnpf0ok8xvjwx+62_nc-f12-8('
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.27.16.218', 'fusion.iiitdmj.ac.in']
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fusionlab',
-        'HOST': '172.27.16.216',
+        'NAME': 'fusionlab2',
+        'HOST': 'localhost',
         'USER': 'fusion_admin',
         'PASSWORD': 'hello123',
     }

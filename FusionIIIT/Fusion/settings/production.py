@@ -4,7 +4,10 @@ DEBUG = True
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '172.27.16.216']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '172.27.16.218', 'fusion.iiitdmj.ac.in']
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # password of sender
 EMAIL_HOST_PASSWORD = os.environ['MAIL_PASSWORD']
@@ -14,7 +17,7 @@ EMAIL_HOST_PASSWORD = os.environ['MAIL_PASSWORD']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fusionlab',
+        'NAME': 'fusionlab2',
         'HOST': 'localhost',
         'USER': 'fusion_admin',
         'PASSWORD': 'hello123',

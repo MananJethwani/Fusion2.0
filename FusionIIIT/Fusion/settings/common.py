@@ -40,6 +40,9 @@ SOCIALACCOUNT_PROVIDERS = {
 
 # allauth settings
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 LOGIN_URL = '/accounts/login/'
 LOGOUT_URL = '/accounts/logout/'
 LOGIN_REDIRECT_URL = '/dashboard'

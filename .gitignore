@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+roll_*
+FusionIIIT/Fusion/static
 
 # IDEs #
 .vscode
@@ -48,7 +50,7 @@ instance/.webassets-cache
 
 # PyBuilder
 target/
-
+*_pass.csv
 # pyenv
 .python-version
 
